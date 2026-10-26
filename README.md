@@ -189,6 +189,6 @@ Se não quiseres usar o Git, é possível sacar tudo de uma só vez:
 1. Na página principal deste repositório, carrega no botão verde **Code**.
 2. Escolhe **Download ZIP**.
 3. Abre a pasta de Transferências, clica com o botão direito no ficheiro ZIP e escolhe **Extrair tudo** (Windows) ou faz duplo clique (Mac).
-4. Abre a pasta extraída e faz duplo clique em `Spiridon___Backoffice_Desportivo.html`.
+4. Abre a pasta extraída e faz duplo clique em `index.html`.
 
 Para receber uma versão nova, repete estes passos. **Antes de mudares de pasta, descarrega uma cópia de segurança** e importa-a depois na nova versão.
