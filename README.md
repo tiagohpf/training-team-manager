@@ -1,20 +1,20 @@
-# Spiridon · Backoffice Desportivo
+# Training Team · Backoffice Desportivo
 
-Uma ferramenta simples para **preparar planos de treino semanais** e exportá-los em **PDF** ou **imagem**, pronta a enviar aos atletas.
+Uma ferramenta simples para **preparar planos de treino semanais** e exportá-los em **PDF** ou **imagem**, pronta para partilhar.
 
-É um único ficheiro (`Spiridon___Backoffice_Desportivo.html`) que abre no navegador. **Não precisas de instalar nada, nem de criar conta, nem de ligação à internet.**
+É um único ficheiro (`index.html`) que abre no broeser. **Não precisas de instalar nada ou de criar conta, nem de ligação à internet.**
 
 ---
 
-## O que podes fazer
+## Features
 
 - **Criar planos semanais** por grupo ou por atleta, com Aquecimento, Parte Principal e Retorno à Calma em cada dia.
 - **Formatar o texto** com negrito, itálico, sublinhado e listas. Podes colar texto do Word ou do Google Docs e a formatação mantém-se.
 - **Indicar ritmos** (por exemplo `4:40 - 4:50`) em cada fase do treino.
-- **Escolher cores** para o cabeçalho e para os subtítulos. Cada grupo e cada atleta pode ter a sua cor por defeito.
-- **Organizar grupos e atletas** (Sub-14, Sub-16, Fundistas, etc.).
+- **Escolher cores** para o cabeçalho e para os subtítulos dos planos. Cada grupo e cada atleta pode ter a sua cor por defeito.
+- **Organizar grupos e atletas**.
 - **Exportar o plano** em PDF ou em imagem (PNG).
-- **Guardar cópias de segurança** e passar os dados de um computador para outro.
+- **Importar e exportar dados** de modo a guardar o progresso feito.
 
 ---
 
@@ -32,7 +32,7 @@ Uma ferramenta simples para **preparar planos de treino semanais** e exportá-lo
 
 ## Primeiros passos (resumo)
 
-1. Saca o projeto (com Git ou em ZIP, ver abaixo).
+1. Faz o download do projeto (com Git ou em ZIP, ver abaixo).
 2. Abre o ficheiro `Spiridon___Backoffice_Desportivo.html` com um duplo clique.
 3. Cria os teus grupos e atletas, depois o teu primeiro plano.
 4. **De vez em quando, descarrega uma cópia de segurança** em *Dados e cópias*.
@@ -69,7 +69,7 @@ git --version
 ```
 Deve aparecer algo como `git version 2.xx.x`.
 
-### 2. Sacar o projeto
+### 2. Fazer o download do projeto
 
 1. Abre o terminal (Git Bash no Windows, Terminal no Mac).
 2. Vai para a pasta onde queres guardar o projeto. Por exemplo, os Documentos:
@@ -101,7 +101,7 @@ Os teus planos e atletas **não são afetados**, porque ficam guardados no naveg
 ## Como correr
 
 1. Abre a pasta do projeto.
-2. Faz **duplo clique** em `Spiridon___Backoffice_Desportivo.html`. Abre no navegador.
+2. Faz **duplo clique** em `index.html`. Abre no navegador.
    - Se abrir noutro programa, clica com o botão direito no ficheiro, escolhe **Abrir com** e depois **Google Chrome** (ou Edge).
 
 **Navegadores recomendados:** Google Chrome ou Microsoft Edge. A exportação em imagem pode não funcionar no Safari.
@@ -182,7 +182,7 @@ Os dados ficam ligados ao navegador e à localização do ficheiro. Se moveste o
 
 ---
 
-## Alternativa: sacar como ZIP
+## Alternativa: fazer download em ZIP
 
 Se não quiseres usar o Git, é possível sacar tudo de uma só vez:
 
