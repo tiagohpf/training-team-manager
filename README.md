@@ -2,7 +2,7 @@
 
 Uma ferramenta simples para **preparar planos de treino semanais** e exportá-los em **PDF** ou **imagem**, pronta para partilhar.
 
-É um único ficheiro (`index.html`) que abre no broeser. **Não precisas de instalar nada ou de criar conta, nem de ligação à internet.**
+É um único ficheiro (`index.html`) que abre no navegador. **Não precisas de instalar nada, nem de criar conta, nem de ligação à internet.**
 
 ---
 
@@ -26,14 +26,15 @@ Uma ferramenta simples para **preparar planos de treino semanais** e exportá-lo
 4. [Como usar](#como-usar)
 5. [Guardar cópias e importar](#guardar-cópias-e-importar)
 6. [Problemas frequentes](#problemas-frequentes)
-7. [Alternativa: sacar como ZIP](#alternativa-sacar-como-zip)
+7. [Sugestões e ideias](#sugestões-e-ideias)
+8. [Alternativa: fazer download em ZIP](#alternativa-fazer-download-em-zip)
 
 ---
 
 ## Primeiros passos (resumo)
 
 1. Faz o download do projeto (com Git ou em ZIP, ver abaixo).
-2. Abre o ficheiro `Spiridon___Backoffice_Desportivo.html` com um duplo clique.
+2. Abre o ficheiro `index.html` com um duplo clique.
 3. Cria os teus grupos e atletas, depois o teu primeiro plano.
 4. **De vez em quando, descarrega uma cópia de segurança** em *Dados e cópias*.
 
@@ -179,6 +180,17 @@ Muito provavelmente estás a usar outro navegador ou outro computador, ou limpas
 
 **Atualizei o projeto e os meus dados sumiram.**
 Os dados ficam ligados ao navegador e à localização do ficheiro. Se moveste o ficheiro ou o abriste de outra pasta, importa a tua cópia de segurança.
+
+---
+
+## Sugestões e ideias
+
+Usas esta ferramenta e tens uma ideia para a melhorar? Adoramos ouvir!
+
+- **Tens uma sugestão?** Partilha-a em [Discussions › Ideas](https://github.com/<UTILIZADOR>/<REPOSITORIO>/discussions/new?category=ideas). Podes votar com 👍 nas ideias dos outros.
+- **Encontraste um erro?** Abre um [Issue](https://github.com/<UTILIZADOR>/<REPOSITORIO>/issues/new) e explica o que aconteceu, e em que navegador.
+
+Quanto mais detalhe, melhor. Por exemplo: "Gostava de poder duplicar um plano da semana anterior".
 
 ---
 
