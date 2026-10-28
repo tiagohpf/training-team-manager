@@ -12,8 +12,9 @@ Uma ferramenta simples para **preparar planos de treino semanais** e exportá-lo
 - **Registar treinos ou competições** em cada dia da semana.
 - **Formatar o texto** com negrito, itálico, sublinhado, listas com marcadores e listas numeradas.
 - **Indicar ritmos** (por exemplo `4:40 - 4:50`) nas fases do treino.
-- **Escolher cores** para o cabeçalho e para os subtítulos dos planos. Cada grupo e cada atleta pode ter a sua cor por defeito.
+- **Escolher cores** para o cabeçalho e para os subtítulos dos planos de treino. Cada grupo e cada atleta pode ter a sua cor por defeito.
 - **Organizar grupos e atletas**.
+- **Guardar exercícios** no Dossiê de Exercícios, organizados por grupos (Barreiras, Core, PFG, Técnica de Corrida, etc), e inseri-los nos planos com um clique.
 - **Exportar o plano** em PDF ou em imagem (PNG).
 - **Exportar e importar dados** para guardar o progresso.
 
@@ -23,10 +24,10 @@ Uma ferramenta simples para **preparar planos de treino semanais** e exportá-lo
 
 1. [Primeiros passos](#primeiros-passos)
 2. [Como instalar e correr](#como-instalar-e-correr)
-3. [Alternativa: download em ZIP](#alternativa-download-em-zip)
-4. [Como sacar com Git](#como-sacar-com-git)
+3. [Como sacar com Git](#como-sacar-com-git)
+4. [Alternativa: download em ZIP](#alternativa-download-em-zip)
 5. [Como usar](#como-usar)
-6. [Cópias de segurança e exportação de dados](#cópias-de-segurança-e-exportação-de-dados)
+6. [Cópias de segurança, importação e exportação de dados](#cópias-de-segurança-importação-e-exportação-de-dados)
 7. [Problemas frequentes](#problemas-frequentes)
 8. [Sugestões e ideias](#sugestões-e-ideias)
 
@@ -135,21 +136,30 @@ Para receber uma versão nova, repete estes passos. **Antes de mudares para uma 
 - Podes escolher uma **cor por defeito** para cada grupo e para cada atleta. Um atleta sem cor própria usa a cor do grupo.
 - Podes mudar o grupo de um atleta a qualquer momento na lista.
 
-### 2. Criar um plano
+### 2. Dossiê de Exercícios
+
+Para os exercícios que se repetem (técnica, ginásio, reforço muscular, preparação física geral), usa o dossiê:
+
+- Em **Dossiê de Exercícios**, cria **Grupos de Exercícios** (por exemplo, *Barreiras* ou *Core*) e vai acrescentando exercícios a cada um.
+- Cada exercício tem **nome**, **alcunha**, **descrição**, **link** (por exemplo, um vídeo) e **grupo**. Só o nome é obrigatório.
+- Podes editar ou remover um exercício a qualquer momento. Os planos já criados **não são alterados**.
+
+### 3. Criar um plano
 
 - Em **Planos de treino**, carrega em **+ Novo plano**.
 - Escolhe o **Grupo de Treino** e, se for para um atleta em particular, o **Atleta**. Com ambos em “Todos”, o plano é para toda a gente.
 - Indica a **segunda-feira** da semana.
 - Escolhe as cores do cabeçalho e dos subtítulos, se quiseres mudar as sugeridas.
 - Para um treino, preenche as fases disponíveis e, se necessário, indica o ritmo.
+- Para usar um exercício da biblioteca, carrega em **+ Exercício** no editor da fase, escolhe um ou vários e carrega em **Inserir**. O exercício entra como texto normal, no sítio do cursor, e podes continuar a escrever e a formatar à vontade. O formato é `Nome: descrição [Vídeo]`, onde “Vídeo” é uma ligação clicável. Se não houver descrição fica `Nome: [Vídeo]`, se não houver vídeo fica `Nome: descrição` e, se não houver nenhum dos dois, fica só `Nome`. Podes desligar a descrição ou o vídeo na janela de inserção.
 - Para uma prova ou competição, marca o dia como **prova** e escreve o nome da competição.
 - Carrega em **Guardar plano**.
 
-### 3. Formatar o texto
+### 4. Formatar o texto
 
 No editor podes usar negrito, itálico, sublinhado, listas com marcadores e listas numeradas, ao teu gosto.
 
-### 4. Exportar um plano
+### 5. Exportar um plano
 
 - **Ver / Exportar PDF** abre o plano pronto a imprimir ou a guardar como PDF.
 - **Exportar imagem** descarrega o plano em PNG, ideal para partilhar.
@@ -157,9 +167,9 @@ No editor podes usar negrito, itálico, sublinhado, listas com marcadores e list
 
 ---
 
-## Cópias de segurança, importação e  exportação de dados
+## Cópias de segurança, importação e exportação de dados
 
-Os planos, atletas, grupos e cores ficam guardados **no navegador**. Por isso, é importante exportar os dados regularmente:
+Os planos, atletas, grupos, exercícios e cores ficam guardados **no navegador**. Por isso, é importante exportar os dados regularmente:
 
 - se limpares os dados de navegação, podes **perder os dados**;
 - se mudares de computador ou navegador, **os dados não são transferidos automaticamente**.
