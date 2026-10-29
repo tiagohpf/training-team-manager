@@ -9,12 +9,15 @@ Uma ferramenta simples para **preparar planos de treino semanais** e exportá-lo
 ## Funcionalidades
 
 - **Criar planos semanais** por grupo ou por atleta.
+- **Calendário competitivo independente**, com âmbito, tipo, escalões permitidos, filtros por grupo/atleta, intervalo de datas e exportação organizada por mês para impressão/PDF.
+- **Registar competições** com nome, data, grupo ou atleta, local e observações.
 - **Registar treinos ou competições** em cada dia da semana.
 - **Formatar o texto** com negrito, itálico, sublinhado, listas com marcadores e listas numeradas.
+- **Usar a verificação ortográfica** do navegador no editor de texto.
+- **Colar texto** do Word ou do Google Docs, mantendo a formatação compatível.
 - **Indicar ritmos** (por exemplo `4:40 - 4:50`) nas fases do treino.
-- **Escolher cores** para o cabeçalho e para os subtítulos dos planos de treino. Cada grupo e cada atleta pode ter a sua cor por defeito.
+- **Escolher cores** para o cabeçalho e para os subtítulos dos planos. Cada grupo e cada atleta pode ter a sua cor por defeito.
 - **Organizar grupos e atletas**.
-- **Guardar exercícios** no Dossiê de Exercícios, organizados por grupos (Barreiras, Core, PFG, Técnica de Corrida, etc), e inseri-los nos planos com um clique.
 - **Exportar o plano** em PDF ou em imagem (PNG).
 - **Exportar e importar dados** para guardar o progresso.
 
@@ -24,10 +27,10 @@ Uma ferramenta simples para **preparar planos de treino semanais** e exportá-lo
 
 1. [Primeiros passos](#primeiros-passos)
 2. [Como instalar e correr](#como-instalar-e-correr)
-3. [Como sacar com Git](#como-sacar-com-git)
-4. [Alternativa: download em ZIP](#alternativa-download-em-zip)
+3. [Alternativa: download em ZIP](#alternativa-download-em-zip)
+4. [Como sacar com Git](#como-sacar-com-git)
 5. [Como usar](#como-usar)
-6. [Cópias de segurança, importação e exportação de dados](#cópias-de-segurança-importação-e-exportação-de-dados)
+6. [Cópias de segurança e exportação de dados](#cópias-de-segurança-e-exportação-de-dados)
 7. [Problemas frequentes](#problemas-frequentes)
 8. [Sugestões e ideias](#sugestões-e-ideias)
 
@@ -48,11 +51,26 @@ A aplicação não precisa de instalação: basta abrir o ficheiro HTML num nave
 
 1. Abre a pasta do projeto.
 2. Faz **duplo clique** em `index.html`.
-
+3. Se abrir noutro programa, clica com o botão direito no ficheiro, escolhe **Abrir com** e seleciona **Google Chrome** ou **Microsoft Edge**.
 
 **Navegadores recomendados:** Google Chrome ou Microsoft Edge. A exportação em imagem pode não funcionar no Safari.
 
 **Os teus dados ficam guardados no navegador e no computador onde estás a trabalhar.** Se abrires a aplicação noutro computador ou navegador, os dados não aparecem automaticamente. Para os transferir, usa as opções de exportação e importação de dados.
+
+---
+
+## Alternativa: download em ZIP
+
+Se não quiseres usar o Git, podes descarregar o projeto todo de uma só vez:
+
+1. Na página principal deste repositório, carrega no botão verde **Code**.
+2. Escolhe **Download ZIP**.
+3. Abre a pasta de Transferências e extrai o ficheiro ZIP:
+   - **Windows:** clica com o botão direito e escolhe **Extrair tudo**.
+   - **Mac:** faz duplo clique no ZIP.
+4. Abre a pasta extraída e faz duplo clique em `index.html`.
+
+Para receber uma versão nova, repete estes passos. **Antes de mudares para uma nova pasta, exporta os teus dados** e importa-os depois na nova versão.
 
 ---
 
@@ -114,52 +132,31 @@ git pull
 
 Os teus planos e atletas **não são afetados**, porque ficam guardados no navegador e não na pasta do projeto.
 
-
-## Alternativa: download em ZIP
-
-Se não quiseres usar o Git, podes descarregar o projeto todo de uma só vez:
-
-1. Na página principal deste repositório, carrega no botão verde **Code**.
-2. Escolhe **Download ZIP**.
-3. Abre a pasta de Transferências e extrai o ficheiro ZIP:
-   - **Windows:** clica com o botão direito e escolhe **Extrair tudo**.
-   - **Mac:** faz duplo clique no ZIP.
-4. Abre a pasta extraída e faz duplo clique em `index.html`.
-
-Para receber uma versão nova, repete estes passos. **Antes de mudares para uma nova pasta, exporta os teus dados** e importa-os depois na nova versão.
+---
 
 ## Como usar
 
 ### 1. Atletas e Grupos
 
-- Em **Atletas e Grupos**, adiciona os grupos e os atletas.
+- Em **Atletas e grupos**, adiciona os grupos e os atletas.
 - Podes escolher uma **cor por defeito** para cada grupo e para cada atleta. Um atleta sem cor própria usa a cor do grupo.
 - Podes mudar o grupo de um atleta a qualquer momento na lista.
 
-### 2. Dossiê de Exercícios
-
-Para os exercícios que se repetem (técnica, ginásio, reforço muscular, preparação física geral), usa o dossiê:
-
-- Em **Dossiê de Exercícios**, cria **Grupos de Exercícios** (por exemplo, *Barreiras* ou *Core*) e vai acrescentando exercícios a cada um.
-- Cada exercício tem **nome**, **alcunha**, **descrição**, **link** (por exemplo, um vídeo) e **grupo**. Só o nome é obrigatório.
-- Podes editar ou remover um exercício a qualquer momento. Os planos já criados **não são alterados**.
-
-### 3. Criar um plano
+### 2. Criar um Plano
 
 - Em **Planos de treino**, carrega em **+ Novo plano**.
 - Escolhe o **Grupo de Treino** e, se for para um atleta em particular, o **Atleta**. Com ambos em “Todos”, o plano é para toda a gente.
 - Indica a **segunda-feira** da semana.
 - Escolhe as cores do cabeçalho e dos subtítulos, se quiseres mudar as sugeridas.
 - Para um treino, preenche as fases disponíveis e, se necessário, indica o ritmo.
-- Para usar um exercício da biblioteca, carrega em **+ Exercício** no editor da fase, escolhe um ou vários e carrega em **Inserir**. O exercício entra como texto normal, no sítio do cursor, e podes continuar a escrever e a formatar à vontade. O formato é `Nome: descrição [Vídeo]`, onde “Vídeo” é uma ligação clicável. Se não houver descrição fica `Nome: [Vídeo]`, se não houver vídeo fica `Nome: descrição` e, se não houver nenhum dos dois, fica só `Nome`. Podes desligar a descrição ou o vídeo na janela de inserção.
 - Para uma prova ou competição, marca o dia como **prova** e escreve o nome da competição.
 - Carrega em **Guardar plano**.
 
-### 4. Formatar o texto
+### 3. Formatar o Texto
 
-No editor podes usar negrito, itálico, sublinhado, listas com marcadores e listas numeradas, ao teu gosto.
+No editor podes usar negrito, itálico, sublinhado, listas com marcadores e listas numeradas. A verificação ortográfica depende do navegador e dos idiomas/dicionários disponíveis. Se não aparecerem sugestões, confirma as definições de idioma e de verificação ortográfica do navegador.
 
-### 5. Exportar um plano
+### 4. Exportar um Plano
 
 - **Ver / Exportar PDF** abre o plano pronto a imprimir ou a guardar como PDF.
 - **Exportar imagem** descarrega o plano em PNG, ideal para partilhar.
@@ -167,14 +164,32 @@ No editor podes usar negrito, itálico, sublinhado, listas com marcadores e list
 
 ---
 
-## Cópias de segurança, importação e exportação de dados
+## Calendário Competitivo
 
-Os planos, atletas, grupos, exercícios e cores ficam guardados **no navegador**. Por isso, é importante exportar os dados regularmente:
+A área *Calendário competitivo* é independente dos planos de treino e permite organizar provas ao longo de vários anos.
 
-- se limpares os dados de navegação, podes **perder os dados**;
+1. Clica em **Nova competição** e indica o nome e a data.
+2. Escolhe o **âmbito**: Regional, Zona Norte, Zona Norte + Regional, Popular, Meeting, Nacional ou Internacional.
+3. Escolhe o **tipo**: Ar Livre, Pista Curta, Corta-Mato, Estrada, Pavilhão ou Rua.
+4. Indica o local e, se necessário, observações.
+5. Em **Escalões permitidos**, seleciona todos os grupos que podem participar. Esta lista pode incluir vários escalões.
+6. Opcionalmente, associa também o registo a um grupo ou atleta específico. Essa associação não substitui os escalões permitidos.
+7. Define as datas **De** e **Até** para consultar qualquer intervalo, incluindo épocas que atravessem vários anos. Os atalhos **Época** e **Ano civil** preenchem intervalos comuns.
+8. Filtra por grupo ou atleta para consultar um calendário específico. O filtro de atleta inclui provas associadas ao atleta, ao seu grupo e aos escalões em que pode participar.
+9. Clica em **Exportar calendário / PDF** para abrir uma versão organizada por mês, com as colunas Data, Competição, Âmbito, Local, Tipo e Escalões permitidos. Na janela aberta, escolhe imprimir ou guardar como PDF.
+
+As competições ficam guardadas no navegador e são incluídas nas cópias de segurança. Os registos antigos continuam a funcionar; os campos novos assumem valores por defeito quando não estavam definidos.
+
+---
+
+## Cópias de segurança e exportação de dados
+
+Os planos, atletas, grupos e cores ficam guardados **no navegador**. Por isso, é importante exportar os dados regularmente:
+
+- se limpares os dados de navegação, podes **perder os registos**;
 - se mudares de computador ou navegador, **os dados não são transferidos automaticamente**.
 
-### Exportar Dados
+### Exportar dados
 
 1. Abre **Importar e Exportar Dados** no menu.
 2. Na secção **Cópia de Segurança**, carrega em **Exportar Dados**.
@@ -182,7 +197,7 @@ Os planos, atletas, grupos, exercícios e cores ficam guardados **no navegador**
 
 Faz uma cópia sempre que fizeres alterações importantes, ou pelo menos uma vez por semana.
 
-### Importar Dados
+### Importar dados
 
 1. Abre **Importar e Exportar Dados**.
 2. Na secção **Cópia de Segurança**, carrega em **Importar Dados** e escolhe o ficheiro JSON.
@@ -196,7 +211,7 @@ Faz uma cópia sempre que fizeres alterações importantes, ou pelo menos uma ve
 2. Transfere o ficheiro para o computador novo (por e-mail, pen ou armazenamento pessoal).
 3. No computador novo, abre o backoffice e importa o ficheiro.
 
-### Exportar Atletas e Grupos
+### Exportar atletas e grupos
 
 Em **Importar e Exportar Dados**, a opção **Exportar Atletas e Grupos** descarrega um ficheiro CSV com os atletas e os respetivos grupos. O ficheiro pode ser aberto no Excel.
 
@@ -206,11 +221,27 @@ Os dados ficam guardados localmente no navegador e não são enviados automatica
 
 ---
 
-## Sugestões e Ideias
+## Problemas frequentes
+
+**O PDF não abre quando carrego no botão.**  
+O navegador pode estar a bloquear janelas pop-up. Permite os pop-ups para este ficheiro e tenta novamente.
+
+**A imagem não é descarregada.**  
+Usa o Chrome ou o Edge. No Safari, a exportação em imagem pode falhar. Como alternativa, usa o PDF.
+
+**Abri o backoffice e os meus planos desapareceram.**  
+Podes estar a usar outro navegador ou computador, ou ter limpado os dados de navegação. Importa a tua última cópia de segurança.
+
+**Atualizei o projeto e os meus dados desapareceram.**  
+Os dados ficam associados ao navegador. Se abriste a aplicação noutro navegador ou computador, importa a cópia de segurança. Se moveste o ficheiro para outra pasta e os dados deixaram de aparecer, importa também a cópia de segurança.
+
+---
+
+## Sugestões e ideias
 
 Usas esta ferramenta e tens uma ideia para a melhorar? Adoramos ouvir!
 
-- **Tens uma sugestão?** Partilha-a em [Discussions › Ideas](https://github.com/<UTILIZADOR>/<REPOSITORIO>/discussions/new?category=ideas).
+- **Tens uma sugestão?** Partilha-a em [Discussions › Ideas](https://github.com/<UTILIZADOR>/<REPOSITORIO>/discussions/new?category=ideas). Podes votar com 👍 nas ideias dos outros.
 - **Encontraste um erro?** Abre um [Issue](https://github.com/<UTILIZADOR>/<REPOSITORIO>/issues/new) e explica o que aconteceu e em que navegador.
 
 Quanto mais detalhe, melhor. Por exemplo: “Gostava de poder duplicar um plano da semana anterior”.
