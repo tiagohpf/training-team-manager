@@ -1,0 +1,94 @@
+classDiagram
+direction LR
+
+class Grupo {
+  +id
+  +nome
+  +cor
+  +ativo
+}
+
+class Escalao {
+  +id
+  +nome
+}
+
+class Atleta {
+  +id
+  +nome
+  +grupo_id
+  +escalao_id
+  +ativo
+}
+
+class PlanoTreino {
+  +id
+  +nome
+  +tipo
+  +grupo_id
+  +atleta_id
+  +data_criacao
+  +conteudo_adicional
+}
+
+class FasePlano {
+  +id
+  +plano_id
+  +nome
+  +ordem
+  +conteudo_livre
+}
+
+class Exercicio {
+  +id
+  +nome
+  +alcunha
+  +descricao
+  +video_url
+  +grupo_exercicio
+}
+
+class ExercicioPlano {
+  +id
+  +fase_id
+  +exercicio_id
+  +ordem
+  +texto_personalizado
+}
+
+class Competicao {
+  +id
+  +nome
+  +data
+  +local
+  +ambito
+  +tipo
+  +observacoes
+}
+
+class CompeticaoEscalao {
+  +competicao_id
+  +escalao_id
+}
+
+class AtribuicaoCompeticao {
+  +id
+  +competicao_id
+  +escalao_id
+  +grupo_id
+  +atleta_id
+}
+
+Grupo "1" --> "0..*" Atleta : integra
+Escalao "1" --> "0..*" Atleta : enquadra
+Grupo "1" --> "0..*" PlanoTreino : planos de grupo
+Atleta "1" --> "0..*" PlanoTreino : planos individuais
+PlanoTreino "1" --> "1..*" FasePlano : contém
+FasePlano "1" --> "0..*" ExercicioPlano : inclui
+Exercicio "0..1" --> "0..*" ExercicioPlano : reutilizado em
+Competicao "1" --> "0..*" CompeticaoEscalao : escalões elegíveis
+Escalao "1" --> "0..*" CompeticaoEscalao : elegível em
+Competicao "1" --> "0..*" AtribuicaoCompeticao : tem atribuições
+Grupo "0..1" --> "0..*" AtribuicaoCompeticao : destinatário
+Escalao "0..1" --> "0..*" AtribuicaoCompeticao : destinatário
+Atleta "0..1" --> "0..*" AtribuicaoCompeticao : destinatário
