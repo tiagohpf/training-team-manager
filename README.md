@@ -1,19 +1,8 @@
 # Training Team · Backoffice Desportivo
-
-<<<<<<< HEAD
-> **Versão 1.4.0**
-
-Uma ferramenta simples para **preparar planos de treino semanais** e exportá-los em **PDF** ou **imagem**, pronta para partilhar.
-
-É um único ficheiro (`index.html`) que abre no navegador. **Não precisas de instalar nada, nem de criar conta, nem de ligação à internet.**
-=======
 Uma ferramenta simples para os treinadores, sendo possível **convocar atletas para as competições** e **preparar planos de treino semanais**, exportando em **PDF** ou **imagem**, pronta para partilhar.
 
 É um único ficheiro (`index.html`) que abre no navegador. **Não precisas de instalar nada, nem de criar conta.**
->>>>>>> 3835cb151f1b1e7a25b90f23eaccc0d1b029d57a
-
----
-
+=======
 ## Funcionalidades
 - **Criar planos semanais** por grupo ou por atleta.
 - **Calendário competitivo independente**, com âmbito, tipo, escalões permitidos, convocações por grupo e/ou por atleta, filtros em cascata por escalão, grupo e atleta, intervalo de datas e exportação organizada por mês para impressão/PDF.
@@ -150,10 +139,6 @@ Os teus planos e atletas **não são afetados**, porque ficam guardados no naveg
 - Podes escolher uma **cor por defeito** para cada grupo e para cada atleta. Um atleta sem cor própria usa a cor do grupo.
 - A informação dos atletas é apresentada no formato **Escalão · Grupo de treino · Género**. Os registos anteriores à introdução do género ficam como **A definir** até serem atualizados.
 - Na listagem, podes filtrar por escalão, grupo de treino e género. Por defeito, são apresentados todos os atletas numa área com altura limitada e deslocamento interno.
-<<<<<<< HEAD
-- Podes mudar o grupo de um atleta na respetiva ficha.
-=======
->>>>>>> 3835cb151f1b1e7a25b90f23eaccc0d1b029d57a
 
 ### 2. Criar um Plano
 
@@ -259,32 +244,3 @@ Usas esta ferramenta e tens uma ideia para a melhorar? Adoramos ouvir!
 - **Encontraste um erro?** Abre um [Issue](https://github.com/<UTILIZADOR>/<REPOSITORIO>/issues/new) e explica o que aconteceu e em que navegador.
 
 Quanto mais detalhe, melhor. Por exemplo: “Gostava de poder duplicar um plano da semana anterior”.
-<<<<<<< HEAD
-
-## Atualização v1.4.7 — 30/10/2026, 18:15
-
-- Corrigida a disposição dos filtros na página de competições. A área de filtros passou a utilizar uma grelha responsiva, com larguras consistentes para os campos de data, escalão, grupo e atleta, e para os controlos de período e exportação. Em ecrãs mais estreitos, a grelha reduz automaticamente o número de colunas.
-
-
-## Atualização v1.4.7 — 30/10/2026, 18:45
-
-- Reorganizada a barra de filtros do calendário competitivo para reduzir a altura: os dois campos de data ficam lado a lado num único bloco, seguidos dos filtros de escalão, grupo e atleta. Os atalhos «Época» e «Ano civil» ficam numa segunda linha. - As opções de exportação (com nomes/sem nomes) foram separadas dos filtros e colocadas numa faixa própria abaixo, alinhada à direita. O layout adapta-se a ecrãs mais estreitos.
-
-
-## Atualização v1.4.7 — 30/10/2026, 19:10
-
-- Compactada novamente a barra do calendário competitivo: os campos de data, escalão, grupo e atleta e os atalhos «Época»/«Ano civil» passam a partilhar uma única linha em ecrãs largos. A escolha do formato de exportação e o botão de exportar ficam juntos numa segunda linha, separada dos filtros. Em ecrãs mais estreitos, os controlos reorganizam-se de forma responsiva.
-
-
-## Atualização v1.4.7 — 30/10/2026, 19:40
-
-- Removidos os atalhos «Época» e «Ano civil» da barra de filtros.
-- O botão «Exportar calendário / PDF» passou para o topo da área. Ao clicar, são apresentadas as opções «Treinadores (com nomes)» e «Pais (sem nomes)», além da opção para cancelar. A escolha do formato só aparece quando solicitada.
-
-
-## Atualização v1.4.7 — 31/10/2026, 11:52
-
-- Na lista de grupos, os atletas passam a ser apresentados por ordem alfabética.
-- Adicionada a ação «Editar nome» em cada grupo. A alteração atualiza as referências ao grupo nos atletas, planos de treino, atribuições de competições, resultados e registos do grupo, preservando a respetiva cor. Não permite nomes vazios nem duplicados.
-=======
->>>>>>> 3835cb151f1b1e7a25b90f23eaccc0d1b029d57a
