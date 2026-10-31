@@ -1,44 +1,24 @@
 # Training Team · Backoffice Desportivo
 
-> **Versão 1.4.0**
-<<<<<<< HEAD
-
-Uma ferramenta simples para **preparar planos de treino semanais** e exportá-los em **PDF** ou **imagem**, pronta para partilhar.
-=======
->>>>>>> 1e7a5cf932375c89bc910ba5fcc2f53e448aea3e
-
 Uma ferramenta simples para os treinadores, sendo possível **convocar atletas para as competições** e **preparar planos de treino semanais**, exportando em **PDF** ou **imagem**, pronta para partilhar.
 
 É um único ficheiro (`index.html`) que abre no navegador. **Não precisas de instalar nada, nem de criar conta.**
 
 ---
 
-## Funcionalidades\n\n> Versão 1.4.2
-
+## Funcionalidades
 - **Criar planos semanais** por grupo ou por atleta.
-<<<<<<< HEAD
 - **Calendário competitivo independente**, com âmbito, tipo, escalões permitidos, convocações por grupo e/ou por atleta, filtros em cascata por escalão, grupo e atleta, intervalo de datas e exportação organizada por mês para impressão/PDF.
 - **Registar competições** com nome, data, local e observações, definindo separadamente os escalões elegíveis e os grupos/atletas convocados.
-- **Registar treinos ou competições** em cada dia da semana e indicar livremente o tipo de treino (por exemplo, «Treino de Força»).
+- **Registar treinos ou competições** em cada dia da semana e indicar livremente o tipo de treino.
 - **Formatar o texto** com negrito, itálico, sublinhado, listas com marcadores e listas numeradas.
 - **Usar a verificação ortográfica** do navegador no editor de texto.
 - **Indicar ritmos** (por exemplo `4:40 - 4:50`) nas fases do treino.
 - **Escolher cores** para o cabeçalho e para os subtítulos dos planos. Cada grupo e cada atleta pode ter a sua cor por defeito.
 - **Exportar calendários com cores personalizadas**, respeitando a cor definida para o grupo ou atleta; quando não existe uma cor própria, é usada a cor por defeito da aplicação.
 - **Organizar grupos e atletas**, com género (Masculino, Feminino ou A definir) e filtros por escalão, grupo de treino e género na listagem de atletas.
-=======
-- **Calendário competitivo independente**, com âmbito, tipo, escalões permitidos, convocatórias e filtros por grupo e/ou por atleta, intervalo de datas e exportação em PDF.
-- **Registar competições** com nome, data, local e observações, definindo separadamente os escalões elegíveis e os grupos/atletas convocados.
-- **Registar treinos ou competições** em cada dia da semana.
-- **Formatar o texto** com negrito, itálico, sublinhado, listas com marcadores e listas numeradas.
-- **Indicar ritmos** (por exemplo `4:40 - 4:50`) nas fases do treino.
-- **Escolher cores** para o cabeçalho e para os subtítulos dos planos. Cada grupo e cada atleta pode ter a sua cor por defeito.
-- **Exportar calendários com cores personalizadas**, respeitando a cor definida para o grupo ou atleta; quando não existe uma cor própria, é usada a cor por defeito da aplicação.
-- **Organizar grupos e atletas**.
->>>>>>> 1e7a5cf932375c89bc910ba5fcc2f53e448aea3e
 - **Exportar o plano** em PDF ou em imagem (PNG).
 - **Exportar e importar dados** para guardar o progresso.
-
 ---
 
 ## Índice
@@ -159,13 +139,8 @@ Os teus planos e atletas **não são afetados**, porque ficam guardados no naveg
 
 - Em **Atletas e grupos**, adiciona os grupos e os atletas. Podes registar vários atletas de uma só vez, partilhando o mesmo grupo e escalão; o género é definido individualmente na ficha de cada atleta ou no registo inicial.
 - Podes escolher uma **cor por defeito** para cada grupo e para cada atleta. Um atleta sem cor própria usa a cor do grupo.
-<<<<<<< HEAD
 - A informação dos atletas é apresentada no formato **Escalão · Grupo de treino · Género**. Os registos anteriores à introdução do género ficam como **A definir** até serem atualizados.
 - Na listagem, podes filtrar por escalão, grupo de treino e género. Por defeito, são apresentados todos os atletas numa área com altura limitada e deslocamento interno.
-=======
-- A informação dos atletas é apresentada no formato **Escalão · Grupo de treino**.
->>>>>>> 1e7a5cf932375c89bc910ba5fcc2f53e448aea3e
-- Podes mudar o grupo de um atleta na respetiva ficha.
 
 ### 2. Criar um Plano
 
@@ -197,20 +172,12 @@ A área *Calendário competitivo* é independente dos planos de treino e permite
 2. Escolhe o **âmbito**: Regional, Zona Norte, Zona Norte + Regional, Popular, Meeting, Nacional ou Internacional.
 3. Escolhe o **tipo**: Ar Livre, Pista Curta, Corta-Mato, Estrada, Pavilhão ou Rua.
 4. Indica o local e, se necessário, observações.
-<<<<<<< HEAD
 5. Define a **data de início** e a **data de fim**. Por defeito, ambas são iguais; se a competição durar vários dias, altera a data de fim. A data de fim não pode ser anterior à data de início.
 6. Em **Escalões permitidos**, seleciona os escalões competitivos elegíveis para a prova. Esta definição indica quem pode participar, não quem foi convocado.
 7. Define a convocatória selecionando um ou mais grupos completos e/ou atletas individuais. Podes, por exemplo, convocar todo um grupo e escolher apenas alguns atletas de outro grupo. A seleção individual pode abranger atletas de grupos e escalões diferentes.
 8. Define as datas **De** e **Até** para consultar qualquer intervalo, incluindo épocas que atravessem vários anos. Os atalhos **Época** e **Ano civil** preenchem intervalos comuns.
 9. Filtra por grupo ou atleta para consultar um calendário específico. Estes filtros aplicam-se à consulta do calendário competitivo; a secção **Próximas Competições** do Painel Geral apresenta as competições dos próximos 30 dias sem filtrar por escalão, grupo ou atleta convocado.
 10. Clica em **Exportar calendário / PDF** para abrir uma versão organizada por mês, com as colunas Data, Competição, Âmbito, Local, Tipo e Escalões permitidos. A exportação respeita a cor definida para o grupo ou atleta; na ausência de cor personalizada, utiliza a cor predefinida da aplicação. Na janela aberta, escolhe imprimir ou guardar como PDF.
-=======
-5. Em **Escalões permitidos**, seleciona os escalões competitivos elegíveis para a prova. Esta definição indica quem pode participar, não quem foi convocado.
-6. Define a convocatória selecionando um ou mais grupos completos e/ou atletas individuais. Podes, por exemplo, convocar todo um grupo e escolher apenas alguns atletas de outro grupo. A seleção individual pode abranger atletas de grupos e escalões diferentes.
-7. Define as datas **De** e **Até** para consultar qualquer intervalo, incluindo épocas que atravessem vários anos. Os atalhos **Época** e **Ano civil** preenchem intervalos comuns.
-8. Filtra por grupo ou atleta para consultar um calendário específico. Estes filtros aplicam-se à consulta do calendário competitivo; a secção **Próximas Competições** do Painel Geral apresenta as competições dos próximos 30 dias sem filtrar por escalão, grupo ou atleta convocado.
-9. Clica em **Exportar calendário / PDF** para abrir uma versão organizada por mês, com as colunas Data, Competição, Âmbito, Local, Tipo e Escalões permitidos. A exportação respeita a cor definida para o grupo ou atleta; na ausência de cor personalizada, utiliza a cor predefinida da aplicação. Na janela aberta, escolhe imprimir ou guardar como PDF.
->>>>>>> 1e7a5cf932375c89bc910ba5fcc2f53e448aea3e
 
 As competições ficam guardadas no navegador e são incluídas nas cópias de segurança. Os registos antigos continuam a funcionar; os campos novos assumem valores por defeito quando não estavam definidos.
 
@@ -275,7 +242,7 @@ Os dados ficam associados ao navegador. Se abriste a aplicação noutro navegado
 
 Usas esta ferramenta e tens uma ideia para a melhorar? Adoramos ouvir!
 
-- **Tens uma sugestão?** Partilha-a em [Discussions › Ideas](https://github.com/<UTILIZADOR>/<REPOSITORIO>/discussions/new?category=ideas). Podes votar com 👍 nas ideias dos outros.
+- **Tens uma sugestão?** Partilha-a em [Discussions › Ideas](https://github.com/<UTILIZADOR>/<REPOSITORIO>/discussions/new?category=ideas).
 - **Encontraste um erro?** Abre um [Issue](https://github.com/<UTILIZADOR>/<REPOSITORIO>/issues/new) e explica o que aconteceu e em que navegador.
 
 Quanto mais detalhe, melhor. Por exemplo: “Gostava de poder duplicar um plano da semana anterior”.
