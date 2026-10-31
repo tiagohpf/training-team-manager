@@ -1,19 +1,24 @@
 # Training Team · Backoffice Desportivo
 
+<<<<<<< HEAD
 > **Versão 1.4.0**
 
 Uma ferramenta simples para **preparar planos de treino semanais** e exportá-los em **PDF** ou **imagem**, pronta para partilhar.
 
 É um único ficheiro (`index.html`) que abre no navegador. **Não precisas de instalar nada, nem de criar conta, nem de ligação à internet.**
+=======
+Uma ferramenta simples para os treinadores, sendo possível **convocar atletas para as competições** e **preparar planos de treino semanais**, exportando em **PDF** ou **imagem**, pronta para partilhar.
+
+É um único ficheiro (`index.html`) que abre no navegador. **Não precisas de instalar nada, nem de criar conta.**
+>>>>>>> 3835cb151f1b1e7a25b90f23eaccc0d1b029d57a
 
 ---
 
-## Funcionalidades\n\n> Versão 1.4.2
-
+## Funcionalidades
 - **Criar planos semanais** por grupo ou por atleta.
 - **Calendário competitivo independente**, com âmbito, tipo, escalões permitidos, convocações por grupo e/ou por atleta, filtros em cascata por escalão, grupo e atleta, intervalo de datas e exportação organizada por mês para impressão/PDF.
 - **Registar competições** com nome, data, local e observações, definindo separadamente os escalões elegíveis e os grupos/atletas convocados.
-- **Registar treinos ou competições** em cada dia da semana e indicar livremente o tipo de treino (por exemplo, «Treino de Força»).
+- **Registar treinos ou competições** em cada dia da semana e indicar livremente o tipo de treino.
 - **Formatar o texto** com negrito, itálico, sublinhado, listas com marcadores e listas numeradas.
 - **Usar a verificação ortográfica** do navegador no editor de texto.
 - **Colar texto** do Word ou do Google Docs, mantendo a formatação compatível.
@@ -23,7 +28,6 @@ Uma ferramenta simples para **preparar planos de treino semanais** e exportá-lo
 - **Organizar grupos e atletas**, com género (Masculino, Feminino ou A definir) e filtros por escalão, grupo de treino e género na listagem de atletas.
 - **Exportar o plano** em PDF ou em imagem (PNG).
 - **Exportar e importar dados** para guardar o progresso.
-
 ---
 
 ## Índice
@@ -146,7 +150,10 @@ Os teus planos e atletas **não são afetados**, porque ficam guardados no naveg
 - Podes escolher uma **cor por defeito** para cada grupo e para cada atleta. Um atleta sem cor própria usa a cor do grupo.
 - A informação dos atletas é apresentada no formato **Escalão · Grupo de treino · Género**. Os registos anteriores à introdução do género ficam como **A definir** até serem atualizados.
 - Na listagem, podes filtrar por escalão, grupo de treino e género. Por defeito, são apresentados todos os atletas numa área com altura limitada e deslocamento interno.
+<<<<<<< HEAD
 - Podes mudar o grupo de um atleta na respetiva ficha.
+=======
+>>>>>>> 3835cb151f1b1e7a25b90f23eaccc0d1b029d57a
 
 ### 2. Criar um Plano
 
@@ -248,10 +255,11 @@ Os dados ficam associados ao navegador. Se abriste a aplicação noutro navegado
 
 Usas esta ferramenta e tens uma ideia para a melhorar? Adoramos ouvir!
 
-- **Tens uma sugestão?** Partilha-a em [Discussions › Ideas](https://github.com/<UTILIZADOR>/<REPOSITORIO>/discussions/new?category=ideas). Podes votar com 👍 nas ideias dos outros.
+- **Tens uma sugestão?** Partilha-a em [Discussions › Ideas](https://github.com/<UTILIZADOR>/<REPOSITORIO>/discussions/new?category=ideas).
 - **Encontraste um erro?** Abre um [Issue](https://github.com/<UTILIZADOR>/<REPOSITORIO>/issues/new) e explica o que aconteceu e em que navegador.
 
 Quanto mais detalhe, melhor. Por exemplo: “Gostava de poder duplicar um plano da semana anterior”.
+<<<<<<< HEAD
 
 ## Atualização v1.4.7 — 30/10/2026, 18:15
 
@@ -278,3 +286,5 @@ Quanto mais detalhe, melhor. Por exemplo: “Gostava de poder duplicar um plano 
 
 - Na lista de grupos, os atletas passam a ser apresentados por ordem alfabética.
 - Adicionada a ação «Editar nome» em cada grupo. A alteração atualiza as referências ao grupo nos atletas, planos de treino, atribuições de competições, resultados e registos do grupo, preservando a respetiva cor. Não permite nomes vazios nem duplicados.
+=======
+>>>>>>> 3835cb151f1b1e7a25b90f23eaccc0d1b029d57a
