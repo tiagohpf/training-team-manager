@@ -1,23 +1,25 @@
 # Training Team · Backoffice Desportivo
 
+> **Versão 1.4.0**
+
 Uma ferramenta simples para **preparar planos de treino semanais** e exportá-los em **PDF** ou **imagem**, pronta para partilhar.
 
 É um único ficheiro (`index.html`) que abre no navegador. **Não precisas de instalar nada, nem de criar conta, nem de ligação à internet.**
 
 ---
 
-## Funcionalidades
+## Funcionalidades\n\n> Versão 1.4.2
 
 - **Criar planos semanais** por grupo ou por atleta.
-- **Calendário competitivo independente**, com âmbito, tipo, escalões permitidos, filtros por grupo/atleta, intervalo de datas e exportação organizada por mês para impressão/PDF.
-- **Registar competições** com nome, data, grupo ou atleta, local e observações.
-- **Registar treinos ou competições** em cada dia da semana.
+- **Calendário competitivo independente**, com âmbito, tipo, escalões permitidos, convocações por grupo e/ou por atleta, filtros em cascata por escalão, grupo e atleta, intervalo de datas e exportação organizada por mês para impressão/PDF.
+- **Registar competições** com nome, data, local e observações, definindo separadamente os escalões elegíveis e os grupos/atletas convocados.
+- **Registar treinos ou competições** em cada dia da semana e indicar livremente o tipo de treino (por exemplo, «Treino de Força»).
 - **Formatar o texto** com negrito, itálico, sublinhado, listas com marcadores e listas numeradas.
 - **Usar a verificação ortográfica** do navegador no editor de texto.
-- **Colar texto** do Word ou do Google Docs, mantendo a formatação compatível.
 - **Indicar ritmos** (por exemplo `4:40 - 4:50`) nas fases do treino.
 - **Escolher cores** para o cabeçalho e para os subtítulos dos planos. Cada grupo e cada atleta pode ter a sua cor por defeito.
-- **Organizar grupos e atletas**.
+- **Exportar calendários com cores personalizadas**, respeitando a cor definida para o grupo ou atleta; quando não existe uma cor própria, é usada a cor por defeito da aplicação.
+- **Organizar grupos e atletas**, com género (Masculino, Feminino ou A definir) e filtros por escalão, grupo de treino e género na listagem de atletas.
 - **Exportar o plano** em PDF ou em imagem (PNG).
 - **Exportar e importar dados** para guardar o progresso.
 
@@ -30,9 +32,10 @@ Uma ferramenta simples para **preparar planos de treino semanais** e exportá-lo
 3. [Alternativa: download em ZIP](#alternativa-download-em-zip)
 4. [Como sacar com Git](#como-sacar-com-git)
 5. [Como usar](#como-usar)
-6. [Cópias de segurança e exportação de dados](#cópias-de-segurança-e-exportação-de-dados)
-7. [Problemas frequentes](#problemas-frequentes)
-8. [Sugestões e ideias](#sugestões-e-ideias)
+6. [Calendário competitivo](#calendário-competitivo)
+7. [Cópias de segurança e exportação de dados](#cópias-de-segurança-e-exportação-de-dados)
+8. [Problemas frequentes](#problemas-frequentes)
+9. [Sugestões e ideias](#sugestões-e-ideias)
 
 ---
 
@@ -138,17 +141,19 @@ Os teus planos e atletas **não são afetados**, porque ficam guardados no naveg
 
 ### 1. Atletas e Grupos
 
-- Em **Atletas e grupos**, adiciona os grupos e os atletas.
+- Em **Atletas e grupos**, adiciona os grupos e os atletas. Podes registar vários atletas de uma só vez, partilhando o mesmo grupo e escalão; o género é definido individualmente na ficha de cada atleta ou no registo inicial.
 - Podes escolher uma **cor por defeito** para cada grupo e para cada atleta. Um atleta sem cor própria usa a cor do grupo.
-- Podes mudar o grupo de um atleta a qualquer momento na lista.
+- A informação dos atletas é apresentada no formato **Escalão · Grupo de treino · Género**. Os registos anteriores à introdução do género ficam como **A definir** até serem atualizados.
+- Na listagem, podes filtrar por escalão, grupo de treino e género. Por defeito, são apresentados todos os atletas numa área com altura limitada e deslocamento interno.
+- Podes mudar o grupo de um atleta na respetiva ficha.
 
 ### 2. Criar um Plano
 
 - Em **Planos de treino**, carrega em **+ Novo plano**.
-- Escolhe o **Grupo de Treino** e, se for para um atleta em particular, o **Atleta**. Com ambos em “Todos”, o plano é para toda a gente.
+- Define o destinatário do plano: **um grupo de treino ou um atleta individual**. Um plano é associado a um destes destinatários, não aos dois em simultâneo.
 - Indica a **segunda-feira** da semana.
 - Escolhe as cores do cabeçalho e dos subtítulos, se quiseres mudar as sugeridas.
-- Para um treino, preenche as fases disponíveis e, se necessário, indica o ritmo.
+- Para um treino, preenche as fases disponíveis e, se necessário, indica o ritmo. No campo **Tipo de treino**, escreve livremente a designação que pretendes, por exemplo, «Treino de Força».
 - Para uma prova ou competição, marca o dia como **prova** e escreve o nome da competição.
 - Carrega em **Guardar plano**.
 
@@ -166,17 +171,18 @@ No editor podes usar negrito, itálico, sublinhado, listas com marcadores e list
 
 ## Calendário Competitivo
 
-A área *Calendário competitivo* é independente dos planos de treino e permite organizar provas ao longo de vários anos.
+A área *Calendário competitivo* é independente dos planos de treino e permite organizar provas ao longo de vários anos. A elegibilidade por escalão e a convocatória são conceitos separados: os escalões indicam quem pode participar; os grupos e atletas selecionados indicam quem o clube pretende convocar.
 
 1. Clica em **Nova competição** e indica o nome e a data.
 2. Escolhe o **âmbito**: Regional, Zona Norte, Zona Norte + Regional, Popular, Meeting, Nacional ou Internacional.
 3. Escolhe o **tipo**: Ar Livre, Pista Curta, Corta-Mato, Estrada, Pavilhão ou Rua.
 4. Indica o local e, se necessário, observações.
-5. Em **Escalões permitidos**, seleciona todos os grupos que podem participar. Esta lista pode incluir vários escalões.
-6. Opcionalmente, associa também o registo a um grupo ou atleta específico. Essa associação não substitui os escalões permitidos.
-7. Define as datas **De** e **Até** para consultar qualquer intervalo, incluindo épocas que atravessem vários anos. Os atalhos **Época** e **Ano civil** preenchem intervalos comuns.
-8. Filtra por grupo ou atleta para consultar um calendário específico. O filtro de atleta inclui provas associadas ao atleta, ao seu grupo e aos escalões em que pode participar.
-9. Clica em **Exportar calendário / PDF** para abrir uma versão organizada por mês, com as colunas Data, Competição, Âmbito, Local, Tipo e Escalões permitidos. Na janela aberta, escolhe imprimir ou guardar como PDF.
+5. Define a **data de início** e a **data de fim**. Por defeito, ambas são iguais; se a competição durar vários dias, altera a data de fim. A data de fim não pode ser anterior à data de início.
+6. Em **Escalões permitidos**, seleciona os escalões competitivos elegíveis para a prova. Esta definição indica quem pode participar, não quem foi convocado.
+7. Define a convocatória selecionando um ou mais grupos completos e/ou atletas individuais. Podes, por exemplo, convocar todo um grupo e escolher apenas alguns atletas de outro grupo. A seleção individual pode abranger atletas de grupos e escalões diferentes.
+8. Define as datas **De** e **Até** para consultar qualquer intervalo, incluindo épocas que atravessem vários anos. Os atalhos **Época** e **Ano civil** preenchem intervalos comuns.
+9. Filtra por grupo ou atleta para consultar um calendário específico. Estes filtros aplicam-se à consulta do calendário competitivo; a secção **Próximas Competições** do Painel Geral apresenta as competições dos próximos 30 dias sem filtrar por escalão, grupo ou atleta convocado.
+10. Clica em **Exportar calendário / PDF** para abrir uma versão organizada por mês, com as colunas Data, Competição, Âmbito, Local, Tipo e Escalões permitidos. A exportação respeita a cor definida para o grupo ou atleta; na ausência de cor personalizada, utiliza a cor predefinida da aplicação. Na janela aberta, escolhe imprimir ou guardar como PDF.
 
 As competições ficam guardadas no navegador e são incluídas nas cópias de segurança. Os registos antigos continuam a funcionar; os campos novos assumem valores por defeito quando não estavam definidos.
 
@@ -184,7 +190,7 @@ As competições ficam guardadas no navegador e são incluídas nas cópias de s
 
 ## Cópias de segurança e exportação de dados
 
-Os planos, atletas, grupos e cores ficam guardados **no navegador**. Por isso, é importante exportar os dados regularmente:
+Os planos, atletas, grupos, competições e cores ficam guardados **no navegador**. Por isso, é importante exportar os dados regularmente:
 
 - se limpares os dados de navegação, podes **perder os registos**;
 - se mudares de computador ou navegador, **os dados não são transferidos automaticamente**.
