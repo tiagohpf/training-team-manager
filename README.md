@@ -2,7 +2,7 @@
 Uma ferramenta simples para os treinadores, sendo possível **convocar atletas para as competições** e **preparar planos de treino semanais**, exportando em **PDF** ou **imagem**, pronta para partilhar.
 
 É um único ficheiro (`index.html`) que abre no navegador. **Não precisas de instalar nada, nem de criar conta.**
-=======
+
 ## Funcionalidades
 - **Criar planos semanais** por grupo ou por atleta.
 - **Calendário competitivo independente**, com âmbito, tipo, escalões permitidos, convocações por grupo e/ou por atleta, filtros em cascata por escalão, grupo e atleta, intervalo de datas e exportação organizada por mês para impressão/PDF.
